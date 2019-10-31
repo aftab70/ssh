@@ -2,7 +2,7 @@
 
 STEP 1:- create the keys and RSA will create public and private keys
 
-         sh-keygen -t rsa -b 2048
+         ssh-keygen -t rsa -b 2048
 
 STEP 2:- Now we are creating private to pem key
 
