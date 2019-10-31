@@ -1,0 +1,25 @@
+########################################### Generate the pem file to login linux system #######################################
+
+STEP 1:- create the keys and RSA will create public and private keys
+
+         sh-keygen -t rsa -b 2048
+
+STEP 2:- Now we are creating private to pem key
+
+         openssl rsa -in ~/.ssh/id_rsa -outform pem > ~/.ssh/rsa.pem
+         
+STEP 3:- Need to update the permission on pem.
+
+         chmod 600 ~/.ssh/rsa.pem
+
+STEP 4:- Copy your PUB key to target server.
+
+         ssh-copy-id -i ~/id_rsa.pub root@10.10.10.10
+         
+STEP 5 :- First time you need to enter the password and then you can login using pem file.
+
+         ssh -i  ~/.ssh/rsa.pem root@10.10.10.10
+         
+###############################################################################################################################         
+        
+         
