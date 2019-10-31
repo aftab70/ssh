@@ -1,4 +1,4 @@
-########################################### Generate the pem file to login linux system #######################################
+########################################### Generate the PEM file to login linux system #######################################
 
 STEP 1:- create the keys and RSA will create public and private keys
 
